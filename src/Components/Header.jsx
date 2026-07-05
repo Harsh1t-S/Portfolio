@@ -4,7 +4,6 @@ import mortarboardLogo from '../assets/mortarboard.gif'
 function Header({ setCurrentPage }) {
   return (
     <header className="border-b border-white/10 bg-slate-900 text-white shadow-lg shadow-black/20">
-      
       <div className="flex items-center px-4 py-3 sm:px-6">
         
         <button 
@@ -54,12 +53,14 @@ function Header({ setCurrentPage }) {
               </button>
             </li>
             <li>
-              <button
-                onClick={() => setCurrentPage('contact')}
-                className="rounded-full bg-cyan-500 px-4 py-2 text-slate-950 transition hover:bg-green-400 focus:outline-none focus:ring-2 focus:ring-green-300"
+              <a
+                href="https://wa.me/917309340382?text=Hi%20Harshit!%20I%20saw%20your%20portfolio%20and%20wanted%20to%20connect."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block rounded-full bg-cyan-500 px-4 py-2 text-slate-950 transition hover:bg-green-400 focus:outline-none focus:ring-2 focus:ring-green-300"
               >
-                Contact
-              </button>
+                Contact Me
+              </a>
             </li>
           </ul>
         </nav>
