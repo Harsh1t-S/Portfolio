@@ -12,7 +12,7 @@ function Header({ setCurrentPage }) {
             alt="Portfolio logo"
             className="h-9 w-9 shrink-0 object-contain invert mix-blend-screen"
           />
-        <div className="text-lg font-semibold tracking-wide sm:text-xl">Portfolio</div>
+          <div className="text-lg font-semibold tracking-wide sm:text-xl">Portfolio</div>
         </button>
         <nav className="ml-auto" aria-label="Main navigation">
           <ul className="flex items-center gap-2 text-sm font-medium sm:gap-3 sm:text-base">
