@@ -10,7 +10,7 @@ function App() {
   const [currentPage, setCurrentPage] = useState('home')
 
   const renderPage = () => {
-    if (currentPage === 'home') return <Hero />
+    if (currentPage === 'home') return <Hero setCurrentPage={setCurrentPage} />
     if (currentPage === 'about') return <About />
     if (currentPage === 'projects') return <Projects />
     if (currentPage === 'certificates') return <Certificates />
