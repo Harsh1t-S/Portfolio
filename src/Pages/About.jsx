@@ -2,11 +2,11 @@ import React from 'react'
 
 function About() {
   return (
-    <section className="mx-auto flex w-full max-w-7xl flex-grow flex-col rounded-2xl bg-slate-900 px-6 py-6 text-white shadow-2xl sm:px-12">
-      
+    <section className="mx-auto flex w-full max-w-7xl flex-grow flex-col rounded-2xl border border-white/10 bg-slate-900/60 px-6 py-10 shadow-2xl backdrop-blur sm:px-12">
+
       <div className="mb-12 text-center">
-        <h1 className="mb-2 text-4xl font-extrabold tracking-tight text-cyan-400 sm:text-5xl">
-          About Me
+        <h1 className="font-display mb-3 text-4xl font-bold text-white sm:text-5xl">
+          About <span className="text-cyan-400">Me</span>
         </h1>
         <div className="mx-auto h-1 w-20 rounded bg-cyan-500"></div>
       </div>
@@ -21,7 +21,7 @@ function About() {
             My journey in tech is driven by a desire to solve real-world problems. Whether I'm deploying a full-stack doctor's portal, visualizing complex pathfinding algorithms, or writing Python scripts to automate tedious tasks, I thrive on turning logic into clean, functional tools.
           </p>
           
-          <div className="mt-2 rounded-xl border border-slate-700 bg-slate-800/50 p-6">
+          <div className="mt-2 rounded-xl border border-white/10 bg-white/5 p-6">
             <h3 className="mb-3 text-xl font-bold text-cyan-400">🎮 Beyond the Code</h3>
             <p className="text-base">
               When I'm not debugging or optimizing deployments, you can usually find me playing <em>Games</em>, or keeping up with the latest cricket stats.
