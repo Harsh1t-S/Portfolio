@@ -4,8 +4,8 @@ import healthSphereImage from '../assets/health-sphere-ss.png'
 import neuroDrawBanner from '../assets/neuro-draw-banner.svg'
 import lumenBanner from '../assets/lumen-banner.svg'
 import pixelForgeBanner from '../assets/pixel-forge-banner.svg'
-import zomatoBanner from '../assets/zomato-banner.svg'
-import learnHubBanner from '../assets/learnhub-banner.svg'
+import zomatoBanner from '../assets/zomato.png'
+import learnHubBanner from '../assets/learnhub.png'
 
 function Projects() {
   const myProjects = [
@@ -18,7 +18,7 @@ function Projects() {
       repoLink: "https://github.com/Harsh1t-S/neuro-draw",
       btn: "Try Live",
       tags: ["React", "Tailwind", "Machine Learning", "SVG"],
-      featured: true,
+      featured: false,
     },
     {
       id: 2,
@@ -29,7 +29,7 @@ function Projects() {
       repoLink: "https://github.com/Harsh1t-S/lumen-raycast",
       btn: "Try Live",
       tags: ["React", "Tailwind", "Canvas", "Computational Geometry"],
-      featured: true,
+      featured: false,
     },
     {
       id: 3,
@@ -51,6 +51,7 @@ function Projects() {
       repoLink: "https://github.com/Harsh1t-S/pathfinding-visualizer",
       btn: "Try Live",
       tags: ["JavaScript", "Algorithms", "Data Structures"],
+      featured: true,
     },
     {
       id: 5,
@@ -67,20 +68,22 @@ function Projects() {
       title: "Zomato Clone",
       description: "A full-stack food delivery platform inspired by Zomato — restaurant browsing, menus, and ordering flow, built with a TypeScript React frontend and a Node.js backend.",
       image: zomatoBanner,
-      liveLink: "https://github.com/Harsh1t-S/Zomato",
+      liveLink: "https://zomato-nuew.onrender.com/",
       repoLink: "https://github.com/Harsh1t-S/Zomato",
       btn: "View Code",
       tags: ["TypeScript", "React", "Node.js", "Full-Stack"],
+      featured: true,
     },
     {
       id: 7,
       title: "LearnHub — Course Platform",
       description: "A W3Schools-style learning platform: instructors paste lectures straight from Word/Google Docs, students get live 'Try it Yourself' code editors (HTML/JS + real Python via Pyodide), quizzes, and progress tracking.",
       image: learnHubBanner,
-      liveLink: "https://github.com/Harsh1t-S/LearnHub",
+      liveLink: "https://learn-hub-black.vercel.app/",
       repoLink: "https://github.com/Harsh1t-S/LearnHub",
       btn: "View Code",
       tags: ["React", "Express", "MySQL", "Monaco", "Pyodide"],
+      featured: true,
     },
   ]
 
