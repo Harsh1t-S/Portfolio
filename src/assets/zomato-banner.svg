@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <rect width="800" height="450" fill="#cb202d"/>
+  <circle cx="620" cy="290" r="120" fill="#ffffff" fill-opacity="0.12"/>
+  <circle cx="620" cy="290" r="90" fill="#ffffff" fill-opacity="0.16"/>
+  <g transform="translate(560,230)" stroke="#fff" stroke-width="7" stroke-linecap="round" fill="none">
+    <path d="M20 0 v40 M8 0 v22 M32 0 v22 M8 22 q12 10 24 0"/>
+    <path d="M95 0 q18 0 18 22 q0 22 -18 22 v-44 v110" />
+    <path d="M20 55 v55"/>
+  </g>
+  <text x="60" y="130" font-family="Georgia, serif" font-size="64" fill="#ffffff" font-weight="bold" font-style="italic">zomato</text>
+  <text x="64" y="170" font-family="monospace" font-size="16" fill="#ffd9dc" letter-spacing="3">FULL-STACK CLONE · REACT + TYPESCRIPT + NODE</text>
+  <g transform="translate(60,220)" font-family="monospace" font-size="15" fill="#ffffff">
+    <rect width="260" height="44" rx="8" fill="#ffffff" fill-opacity="0.14"/><text x="16" y="28">🍕 Browse restaurants</text>
+    <rect y="56" width="260" height="44" rx="8" fill="#ffffff" fill-opacity="0.14"/><text x="16" y="84">🛒 Cart &amp; ordering flow</text>
+    <rect y="112" width="260" height="44" rx="8" fill="#ffffff" fill-opacity="0.14"/><text x="16" y="140">⚡ TypeScript end-to-end</text>
+  </g>
+</svg>

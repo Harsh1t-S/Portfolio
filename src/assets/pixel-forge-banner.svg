@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <rect width="800" height="450" fill="#0d0d11"/>
+  <g transform="translate(180,110)">
+    <g>
+      <rect x="0" y="0" width="440" height="60" fill="#312e81"/>
+      <rect x="0" y="60" width="440" height="50" fill="#7e22ce"/>
+      <rect x="0" y="110" width="440" height="50" fill="#f472b6"/>
+      <rect x="0" y="160" width="440" height="50" fill="#fb7185"/>
+      <rect x="0" y="210" width="440" height="60" fill="#3f3f46"/>
+      <circle cx="330" cy="85" r="38" fill="#fef3c7"/>
+      <g fill="#27272a">
+        <rect x="20" y="190" width="40" height="80"/><rect x="80" y="170" width="50" height="100"/>
+        <rect x="150" y="200" width="40" height="70"/><rect x="210" y="160" width="55" height="110"/>
+        <rect x="290" y="190" width="45" height="80"/><rect x="360" y="175" width="55" height="95"/>
+      </g>
+    </g>
+    <g stroke="#0d0d11" stroke-width="3">
+      <line x1="0" y1="0" x2="0" y2="270"/><line x1="44" y1="0" x2="44" y2="270"/><line x1="88" y1="0" x2="88" y2="270"/><line x1="132" y1="0" x2="132" y2="270"/><line x1="176" y1="0" x2="176" y2="270"/><line x1="220" y1="0" x2="220" y2="270"/><line x1="264" y1="0" x2="264" y2="270"/><line x1="308" y1="0" x2="308" y2="270"/><line x1="352" y1="0" x2="352" y2="270"/><line x1="396" y1="0" x2="396" y2="270"/><line x1="440" y1="0" x2="440" y2="270"/>
+      <line x1="0" y1="0" x2="440" y2="0"/><line x1="0" y1="45" x2="440" y2="45"/><line x1="0" y1="90" x2="440" y2="90"/><line x1="0" y1="135" x2="440" y2="135"/><line x1="0" y1="180" x2="440" y2="180"/><line x1="0" y1="225" x2="440" y2="225"/><line x1="0" y1="270" x2="440" y2="270"/>
+    </g>
+    <rect x="0" y="0" width="440" height="270" fill="none" stroke="#3f3f46" stroke-width="2" rx="4"/>
+  </g>
+  <g transform="translate(60,40)">
+    <rect x="0" y="0" width="16" height="16" fill="#f472b6"/><rect x="18" y="0" width="16" height="16" fill="#34d399"/>
+    <rect x="0" y="18" width="16" height="16" fill="#60a5fa"/><rect x="18" y="18" width="16" height="16" fill="#fbbf24"/>
+  </g>
+  <text x="110" y="64" font-family="monospace" font-size="34" fill="#f9a8d4" font-weight="bold" letter-spacing="4">PixelForge</text>
+  <text x="110" y="90" font-family="monospace" font-size="14" fill="#64748b" letter-spacing="3">IMAGE → PIXEL ART / ASCII · DITHERING · RETRO PALETTES</text>
+</svg>

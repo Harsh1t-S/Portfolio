@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <rect width="800" height="450" fill="#0f172a"/>
+  <text x="60" y="70" font-family="monospace" font-size="34" fill="#5eead4" font-weight="bold" letter-spacing="3">LearnHub</text>
+  <text x="60" y="98" font-family="monospace" font-size="14" fill="#64748b" letter-spacing="3">COURSE PLATFORM · TRY-IT-YOURSELF EDITOR · QUIZZES</text>
+  <g transform="translate(60,130)">
+    <rect width="320" height="250" rx="10" fill="#1e293b"/>
+    <rect x="20" y="22" width="200" height="14" rx="7" fill="#475569"/>
+    <rect x="20" y="50" width="280" height="8" rx="4" fill="#334155"/>
+    <rect x="20" y="66" width="260" height="8" rx="4" fill="#334155"/>
+    <rect x="20" y="82" width="270" height="8" rx="4" fill="#334155"/>
+    <rect x="20" y="110" width="120" height="34" rx="6" fill="#14b8a6"/>
+    <text x="36" y="132" font-family="monospace" font-size="13" fill="#042f2e" font-weight="bold">Try it ▶</text>
+    <rect x="20" y="165" width="280" height="8" rx="4" fill="#334155"/>
+    <rect x="20" y="181" width="230" height="8" rx="4" fill="#334155"/>
+    <rect x="20" y="205" width="90" height="26" rx="13" fill="#0ea5e9" fill-opacity="0.3"/>
+    <text x="36" y="222" font-family="monospace" font-size="12" fill="#7dd3fc">Quiz ✓</text>
+  </g>
+  <g transform="translate(420,130)">
+    <rect width="320" height="250" rx="10" fill="#020617" stroke="#1e293b" stroke-width="2"/>
+    <circle cx="24" cy="22" r="6" fill="#f87171"/><circle cx="44" cy="22" r="6" fill="#fbbf24"/><circle cx="64" cy="22" r="6" fill="#34d399"/>
+    <g font-family="monospace" font-size="14">
+      <text x="24" y="64" fill="#c084fc">def <tspan fill="#7dd3fc">greet</tspan><tspan fill="#e2e8f0">(name):</tspan></text>
+      <text x="44" y="90" fill="#e2e8f0">return <tspan fill="#fde047">f"Hi {name}!"</tspan></text>
+      <text x="24" y="128" fill="#7dd3fc">greet<tspan fill="#e2e8f0">(</tspan><tspan fill="#fde047">"student"</tspan><tspan fill="#e2e8f0">)</tspan></text>
+      <text x="24" y="170" fill="#475569">&gt;&gt;&gt; <tspan fill="#34d399">Hi student!</tspan></text>
+    </g>
+    <rect x="24" y="200" width="110" height="30" rx="6" fill="#14b8a6" fill-opacity="0.2" stroke="#14b8a6"/>
+    <text x="42" y="220" font-family="monospace" font-size="13" fill="#5eead4">Run ▶</text>
+  </g>
+</svg>

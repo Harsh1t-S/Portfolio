@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <defs>
+    <radialGradient id="glow" cx="0.42" cy="0.55" r="0.75">
+      <stop offset="0%" stop-color="#fbbf24" stop-opacity="0.55"/>
+      <stop offset="40%" stop-color="#fbbf24" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#fbbf24" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="450" fill="#080b12"/>
+  <polygon points="336,248 60,120 60,380 700,380 700,300 520,300 470,200 620,120 336,120" fill="url(#glow)"/>
+  <g stroke="#3b4a6b" stroke-width="6" stroke-linecap="round">
+    <line x1="60" y1="100" x2="740" y2="100"/><line x1="60" y1="390" x2="740" y2="390"/>
+    <line x1="470" y1="160" x2="470" y2="240"/><line x1="590" y1="280" x2="680" y2="320"/>
+    <line x1="170" y1="200" x2="240" y2="260"/>
+  </g>
+  <circle cx="336" cy="248" r="12" fill="#fbbf24"/>
+  <circle cx="336" cy="248" r="26" fill="#fbbf24" fill-opacity="0.25"/>
+  <text x="60" y="62" font-family="monospace" font-size="34" fill="#fcd34d" font-weight="bold" letter-spacing="4">Lumen</text>
+  <text x="185" y="62" font-family="monospace" font-size="14" fill="#64748b" letter-spacing="3">2D RAY CASTING · REAL-TIME SHADOWS · 60FPS</text>
+</svg>

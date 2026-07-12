@@ -1,14 +1,38 @@
 import React from 'react'
 import Cards from '../Components/Cards'
 import healthSphereImage from '../assets/health-sphere-ss.png'
-import codeCollabBanner from '../assets/codecollab-banner.svg'
-import campusConnectBanner from '../assets/campus-connect-banner.svg'
-import expenseWiseBanner from '../assets/expense-wise-banner.svg'
+import neuroDrawBanner from '../assets/neuro-draw-banner.svg'
+import lumenBanner from '../assets/lumen-banner.svg'
+import pixelForgeBanner from '../assets/pixel-forge-banner.svg'
+import zomatoBanner from '../assets/zomato-banner.svg'
+import learnHubBanner from '../assets/learnhub-banner.svg'
 
 function Projects() {
   const myProjects = [
     {
       id: 1,
+      title: "NeuroDraw — Neural Network Playground",
+      description: "Draw a digit and watch a neural network think — every neuron's activation visualized live, layer by layer. A 64→32→16→10 MLP (96% test accuracy) with the entire forward pass hand-written in JavaScript, running fully in the browser.",
+      image: neuroDrawBanner,
+      liveLink: "https://neuro-draw-beta.vercel.app",
+      repoLink: "https://github.com/Harsh1t-S/neuro-draw",
+      btn: "Try Live",
+      tags: ["React", "Tailwind", "Machine Learning", "SVG"],
+      featured: true,
+    },
+    {
+      id: 2,
+      title: "Lumen — 2D Ray Casting Sandbox",
+      description: "Move your mouse — you're the light. Real-time visibility-polygon ray casting at 60fps with draggable walls, drawable geometry, scene presets, and hard shadows — the same technique behind 2D game lighting.",
+      image: lumenBanner,
+      liveLink: "https://lumen-raycast.vercel.app",
+      repoLink: "https://github.com/Harsh1t-S/lumen-raycast",
+      btn: "Try Live",
+      tags: ["React", "Tailwind", "Canvas", "Computational Geometry"],
+      featured: true,
+    },
+    {
+      id: 3,
       title: "Health Sphere (Doctor's Portal)",
       description: "A comprehensive healthcare portal for booking appointments and managing patient-doctor interactions, deployed and running live.",
       image: healthSphereImage,
@@ -19,45 +43,44 @@ function Projects() {
       featured: true,
     },
     {
-      id: 2,
-      title: "CodeCollab — Real-Time Code Editor",
-      description: "A multiplayer code editor where teammates join a room and edit the same file live — synced cursors, an integrated chat, and a real-time participant list powered by WebSockets.",
-      image: codeCollabBanner,
-      liveLink: "https://codecollab-ifraphb2h-harsh1t.vercel.app",
-      repoLink: "https://github.com/Harsh1t-S/codecollab",
-      btn: "Try Live",
-      tags: ["React", "Node.js", "Socket.io", "Monaco Editor"],
-      featured: true,
-    },
-    {
-      id: 3,
-      title: "Pathfinding Visualizer",
-      description: "An interactive web application that visualizes classic pathfinding algorithms (like A* and Dijkstra) in real-time.",
+      id: 4,
+      title: "PathTrace — Pathfinding Visualizer",
+      description: "Interactive visualizer for BFS, DFS, Dijkstra, A* and Greedy Best-First — weighted terrain, animated maze generation, live re-tracing as you drag the endpoints, and a hand-rolled binary-heap priority queue.",
       image: "https://github.com/user-attachments/assets/0ff7258a-bbcc-42b0-833b-760d23b70157",
       liveLink: "https://pathfinding-visualizer-gilt.vercel.app/",
       repoLink: "https://github.com/Harsh1t-S/pathfinding-visualizer",
       btn: "Try Live",
-      tags: ["JavaScript", "Algorithms", "HTML5", "CSS3"],
-    },
-    {
-      id: 4,
-      title: "CampusConnect",
-      description: "A MERN platform for college students to post and browse Lost & Found items and campus events, with JWT-authenticated accounts and image uploads for listings.",
-      image: campusConnectBanner,
-      liveLink: "https://campus-connect-gt9spn3hj-harsh1t.vercel.app",
-      repoLink: "https://github.com/Harsh1t-S/campus-connect",
-      btn: "Try Live",
-      tags: ["React", "Express", "MongoDB", "JWT"],
+      tags: ["JavaScript", "Algorithms", "Data Structures"],
     },
     {
       id: 5,
-      title: "ExpenseWise",
-      description: "A personal finance tracker with category budgets and spend analytics — visualizes monthly trends and category breakdowns via MongoDB aggregation pipelines, with budget-exceeded alerts.",
-      image: expenseWiseBanner,
-      liveLink: "https://expense-wise-njsukt0qm-harsh1t.vercel.app",
-      repoLink: "https://github.com/Harsh1t-S/expense-wise",
+      title: "PixelForge — Pixel Art & ASCII Converter",
+      description: "Turn any image into pixel art or ASCII art entirely in the browser — retro palettes (Game Boy, NES, PICO-8), Floyd–Steinberg dithering, live controls, and PNG export. Nothing is ever uploaded.",
+      image: pixelForgeBanner,
+      liveLink: "https://pixel-forge-snowy.vercel.app",
+      repoLink: "https://github.com/Harsh1t-S/pixel-forge",
       btn: "Try Live",
-      tags: ["React", "Node.js", "MongoDB", "Recharts"],
+      tags: ["React", "Tailwind", "Canvas", "Image Processing"],
+    },
+    {
+      id: 6,
+      title: "Zomato Clone",
+      description: "A full-stack food delivery platform inspired by Zomato — restaurant browsing, menus, and ordering flow, built with a TypeScript React frontend and a Node.js backend.",
+      image: zomatoBanner,
+      liveLink: "https://github.com/Harsh1t-S/Zomato",
+      repoLink: "https://github.com/Harsh1t-S/Zomato",
+      btn: "View Code",
+      tags: ["TypeScript", "React", "Node.js", "Full-Stack"],
+    },
+    {
+      id: 7,
+      title: "LearnHub — Course Platform",
+      description: "A W3Schools-style learning platform: instructors paste lectures straight from Word/Google Docs, students get live 'Try it Yourself' code editors (HTML/JS + real Python via Pyodide), quizzes, and progress tracking.",
+      image: learnHubBanner,
+      liveLink: "https://github.com/Harsh1t-S/LearnHub",
+      repoLink: "https://github.com/Harsh1t-S/LearnHub",
+      btn: "View Code",
+      tags: ["React", "Express", "MySQL", "Monaco", "Pyodide"],
     },
   ]
 
@@ -68,7 +91,7 @@ function Projects() {
           My <span className="text-cyan-400">Projects</span>
         </h1>
         <p className="mx-auto max-w-2xl text-slate-400">
-          A mix of deployed full-stack apps, real-time systems, and algorithm visualizers I've built to learn by shipping.
+          Interactive visualizers, in-browser machine learning, real-time graphics, and full-stack apps — all built to learn by shipping.
         </p>
         <div className="mx-auto mt-4 h-1 w-20 rounded bg-cyan-500"></div>
       </div>
