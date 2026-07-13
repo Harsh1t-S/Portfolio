@@ -4,8 +4,8 @@ import healthSphereImage from '../assets/health-sphere-ss.png'
 import neuroDrawBanner from '../assets/neuro-draw-banner.svg'
 import lumenBanner from '../assets/lumen-banner.svg'
 import pixelForgeBanner from '../assets/pixel-forge-banner.svg'
-import zomatoBanner from '../assets/zomato-banner.svg'
-import learnHubBanner from '../assets/learnhub-banner.svg'
+import zomatoBanner from '../assets/zomato.png'
+import learnHubBanner from '../assets/learnhub.png'
 
 function Projects() {
   const myProjects = [
@@ -18,7 +18,7 @@ function Projects() {
       repoLink: "https://github.com/Harsh1t-S/neuro-draw",
       btn: "Try Live",
       tags: ["React", "Tailwind", "Machine Learning", "SVG"],
-      featured: true,
+      featured: false,
     },
     {
       id: 2,
@@ -29,7 +29,7 @@ function Projects() {
       repoLink: "https://github.com/Harsh1t-S/lumen-raycast",
       btn: "Try Live",
       tags: ["React", "Tailwind", "Canvas", "Computational Geometry"],
-      featured: true,
+      featured: false,
     },
     {
       id: 3,
@@ -51,6 +51,7 @@ function Projects() {
       repoLink: "https://github.com/Harsh1t-S/pathfinding-visualizer",
       btn: "Try Live",
       tags: ["JavaScript", "Algorithms", "Data Structures"],
+      featured: true,
     },
     {
       id: 5,
@@ -65,12 +66,13 @@ function Projects() {
     {
       id: 6,
       title: "Zomato Clone",
-      description: "A full-stack food delivery platform inspired by Zomato — restaurant browsing, menus, and ordering flow, built with a TypeScript React frontend and a Node.js backend, deployed and running live.",
+      description: "A full-stack food delivery platform inspired by Zomato — restaurant browsing, menus, and ordering flow, built with a TypeScript React frontend and a Node.js backend.",
       image: zomatoBanner,
       liveLink: "https://zomato-nuew.onrender.com/",
       repoLink: "https://github.com/Harsh1t-S/Zomato",
-      btn: "Try Live",
+      btn: "View Code",
       tags: ["TypeScript", "React", "Node.js", "Full-Stack"],
+      featured: true,
     },
     {
       id: 7,
@@ -79,28 +81,11 @@ function Projects() {
       image: learnHubBanner,
       liveLink: "https://learn-hub-black.vercel.app/",
       repoLink: "https://github.com/Harsh1t-S/LearnHub",
-      btn: "Try Live",
+      btn: "View Code",
       tags: ["React", "Express", "MySQL", "Monaco", "Pyodide"],
+      featured: true,
     },
   ]
-
-  const featured = myProjects.filter(p => p.featured)
-  const others = myProjects.filter(p => !p.featured)
-
-  const renderCard = (proj) => (
-    <Cards
-      key={proj.id}
-      title={proj.title}
-      description={proj.description}
-      image={proj.image}
-      link={proj.liveLink}
-      repoLink={proj.repoLink}
-      buttonText={proj.btn}
-      tags={proj.tags}
-      featured={proj.featured}
-      isDownload={false}
-    />
-  )
 
   return (
     <section className="mx-auto flex w-full max-w-7xl flex-grow flex-col rounded-2xl border border-white/10 bg-slate-900/60 px-6 py-12 shadow-2xl backdrop-blur sm:px-12">
@@ -113,19 +98,21 @@ function Projects() {
         </p>
         <div className="mx-auto mt-4 h-1 w-20 rounded bg-cyan-500"></div>
       </div>
-
-      <h2 className="mb-6 flex items-center gap-3 text-sm font-semibold uppercase tracking-widest text-cyan-400">
-        <span className="h-px w-8 bg-cyan-500/60"></span>Featured
-      </h2>
-      <div className="mb-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {featured.map(renderCard)}
-      </div>
-
-      <h2 className="mb-6 flex items-center gap-3 text-sm font-semibold uppercase tracking-widest text-slate-500">
-        <span className="h-px w-8 bg-slate-600"></span>More projects
-      </h2>
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {others.map(renderCard)}
+        {myProjects.map((proj) => (
+          <Cards
+            key={proj.id}
+            title={proj.title}
+            description={proj.description}
+            image={proj.image}
+            link={proj.liveLink}
+            repoLink={proj.repoLink}
+            buttonText={proj.btn}
+            tags={proj.tags}
+            featured={proj.featured}
+            isDownload={false}
+          />
+        ))}
       </div>
     </section>
   )
