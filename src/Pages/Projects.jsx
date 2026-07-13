@@ -87,6 +87,11 @@ function Projects() {
     },
   ]
 
+  // featured cards first, otherwise original order (stable sort)
+  const orderedProjects = [...myProjects].sort(
+    (a, b) => (b.featured ? 1 : 0) - (a.featured ? 1 : 0)
+  )
+
   return (
     <section className="mx-auto flex w-full max-w-7xl flex-grow flex-col rounded-2xl border border-white/10 bg-slate-900/60 px-6 py-12 shadow-2xl backdrop-blur sm:px-12">
       <div className="mb-12 text-center">
@@ -99,7 +104,7 @@ function Projects() {
         <div className="mx-auto mt-4 h-1 w-20 rounded bg-cyan-500"></div>
       </div>
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {myProjects.map((proj) => (
+        {orderedProjects.map((proj) => (
           <Cards
             key={proj.id}
             title={proj.title}
