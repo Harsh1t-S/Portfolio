@@ -6,9 +6,21 @@ import lumenBanner from '../assets/lumen-banner.svg'
 import pixelForgeBanner from '../assets/pixel-forge-banner.svg'
 import zomatoBanner from '../assets/zomato.png'
 import learnHubBanner from '../assets/learnhub.png'
+import bracketBanner from '../assets/bracket-banner.svg'
 
 function Projects() {
   const myProjects = [
+    {
+      id: 8,
+      title: "Bracket — Coding Practice Platform",
+      description: "A LeetCode-style practice platform built around a dockable workspace: drag any panel to re-tab or split it, and your layout persists. 73 curated problems with reference solutions, search across titles/topics/companies, shareable problem lists, and a full admin CMS.",
+      image: bracketBanner,
+      liveLink: "https://bracketx.vercel.app",
+      repoLink: "https://github.com/Harsh1t-S/Brackets",
+      btn: "Try Live",
+      tags: ["React", "TypeScript", "Express", "Prisma", "PostgreSQL"],
+      featured: true,
+    },
     {
       id: 1,
       title: "NeuroDraw — Neural Network Playground",

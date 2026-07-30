@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <defs>
+    <radialGradient id="bracketGlow" cx="0.5" cy="0.15" r="0.85">
+      <stop offset="0%" stop-color="#7c5cff" stop-opacity="0.30"/>
+      <stop offset="45%" stop-color="#7c5cff" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#7c5cff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="wordmark" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#957bff"/>
+      <stop offset="100%" stop-color="#22d3ee"/>
+    </linearGradient>
+  </defs>
+
+  <!-- canvas -->
+  <rect width="800" height="450" fill="#0a0a0f"/>
+  <rect width="800" height="450" fill="url(#bracketGlow)"/>
+
+  <!-- logo mark: lucide-style braces in a violet rounded square -->
+  <rect x="60" y="34" width="38" height="38" rx="11" fill="#7c5cff"/>
+  <text x="79" y="60" font-family="monospace" font-size="21" fill="#ffffff"
+        font-weight="bold" text-anchor="middle">{ }</text>
+
+  <text x="112" y="62" font-family="monospace" font-size="34" font-weight="bold"
+        letter-spacing="3" fill="url(#wordmark)">Bracket</text>
+  <text x="268" y="62" font-family="monospace" font-size="11" fill="#6c6c82" letter-spacing="2">DOCKABLE WORKSPACE · 73 PROBLEMS · SHAREABLE LISTS</text>
+
+  <!-- ── statement panel ─────────────────────────────────────── -->
+  <g>
+    <rect x="60" y="104" width="300" height="286" rx="12" fill="#101017" stroke="#24242f"/>
+    <path d="M60 116a12 12 0 0 1 12-12h276a12 12 0 0 1 12 12v18H60z" fill="#17171f"/>
+    <rect x="72" y="112" width="62" height="16" rx="5" fill="#101017"/>
+    <text x="103" y="124" font-family="monospace" font-size="9" fill="#ececf3" text-anchor="middle">Description</text>
+    <text x="163" y="124" font-family="monospace" font-size="9" fill="#6c6c82">Solution</text>
+
+    <text x="78" y="162" font-family="monospace" font-size="15" font-weight="bold" fill="#ececf3">1. Two Sum</text>
+    <rect x="78" y="176" width="40" height="15" rx="7" fill="#34d399" fill-opacity="0.15"/>
+    <text x="98" y="187" font-family="monospace" font-size="9" fill="#34d399" text-anchor="middle">Easy</text>
+    <rect x="124" y="176" width="46" height="15" rx="7" fill="#17171f" stroke="#24242f"/>
+    <text x="147" y="187" font-family="monospace" font-size="9" fill="#a2a2b5" text-anchor="middle">Topics</text>
+
+    <g fill="#2a2a38">
+      <rect x="78" y="206" width="264" height="7" rx="3.5"/>
+      <rect x="78" y="221" width="248" height="7" rx="3.5"/>
+      <rect x="78" y="236" width="196" height="7" rx="3.5"/>
+    </g>
+    <rect x="78" y="262" width="86" height="7" rx="3.5" fill="#3a3a4d"/>
+    <g fill="#22283a">
+      <rect x="78" y="280" width="264" height="6" rx="3"/>
+      <rect x="78" y="293" width="230" height="6" rx="3"/>
+    </g>
+
+    <!-- pinned action bar -->
+    <path d="M60 356h300v22a12 12 0 0 1-12 12H72a12 12 0 0 1-12-12z" fill="#17171f"/>
+    <rect x="74" y="362" width="58" height="16" rx="6" fill="#101017" stroke="#24242f"/>
+    <text x="103" y="373" font-family="monospace" font-size="8" fill="#a2a2b5" text-anchor="middle">Solved</text>
+    <rect x="140" y="362" width="46" height="16" rx="6" fill="#101017" stroke="#24242f"/>
+    <text x="163" y="373" font-family="monospace" font-size="8" fill="#a2a2b5" text-anchor="middle">Save</text>
+    <text x="300" y="374" font-family="monospace" font-size="9" fill="#6c6c82">4210</text>
+    <text x="330" y="374" font-family="monospace" font-size="9" fill="#6c6c82">132</text>
+  </g>
+
+  <!-- ── code panel ──────────────────────────────────────────── -->
+  <g>
+    <rect x="374" y="104" width="366" height="170" rx="12" fill="#101017" stroke="#24242f"/>
+    <path d="M374 116a12 12 0 0 1 12-12h342a12 12 0 0 1 12 12v18H374z" fill="#17171f"/>
+    <rect x="386" y="112" width="42" height="16" rx="5" fill="#101017"/>
+    <text x="407" y="124" font-family="monospace" font-size="9" fill="#ececf3" text-anchor="middle">Code</text>
+    <text x="700" y="124" font-family="monospace" font-size="9" fill="#6c6c82" text-anchor="end">C++</text>
+
+    <g font-family="monospace" font-size="10">
+      <text x="390" y="156" fill="#3a3a4d">1</text>
+      <text x="408" y="156" fill="#957bff">class <tspan fill="#22d3ee">Solution</tspan> <tspan fill="#a2a2b5">{</tspan></text>
+      <text x="390" y="174" fill="#3a3a4d">2</text>
+      <text x="408" y="174" fill="#957bff">public<tspan fill="#a2a2b5">:</tspan></text>
+      <text x="390" y="192" fill="#3a3a4d">3</text>
+      <text x="420" y="192" fill="#22d3ee">vector<tspan fill="#a2a2b5">&lt;</tspan><tspan fill="#957bff">int</tspan><tspan fill="#a2a2b5">&gt;</tspan> twoSum<tspan fill="#a2a2b5">(...) {</tspan></text>
+      <text x="390" y="210" fill="#3a3a4d">4</text>
+      <text x="432" y="210" fill="#957bff">return <tspan fill="#fbbf24">{ i, j }</tspan><tspan fill="#a2a2b5">;</tspan></text>
+      <text x="390" y="228" fill="#3a3a4d">5</text>
+      <text x="420" y="228" fill="#a2a2b5">}</text>
+      <text x="390" y="246" fill="#3a3a4d">6</text>
+      <text x="408" y="246" fill="#a2a2b5">};</text>
+    </g>
+  </g>
+
+  <!-- ── testcases panel ─────────────────────────────────────── -->
+  <g>
+    <rect x="374" y="286" width="366" height="104" rx="12" fill="#101017" stroke="#24242f"/>
+    <path d="M374 298a12 12 0 0 1 12-12h342a12 12 0 0 1 12 12v18H374z" fill="#17171f"/>
+    <rect x="386" y="294" width="62" height="16" rx="5" fill="#101017"/>
+    <text x="417" y="306" font-family="monospace" font-size="9" fill="#ececf3" text-anchor="middle">Testcases</text>
+    <text x="466" y="306" font-family="monospace" font-size="9" fill="#6c6c82">Result</text>
+
+    <rect x="388" y="330" width="40" height="15" rx="6" fill="#7c5cff" fill-opacity="0.18"/>
+    <text x="408" y="341" font-family="monospace" font-size="8" fill="#957bff" text-anchor="middle">Case 1</text>
+    <rect x="434" y="330" width="40" height="15" rx="6" fill="#17171f"/>
+    <text x="454" y="341" font-family="monospace" font-size="8" fill="#6c6c82" text-anchor="middle">Case 2</text>
+
+    <text x="388" y="366" font-family="monospace" font-size="9" fill="#6c6c82">nums =
+      <tspan fill="#ececf3">[2,7,11,15]</tspan>  target = <tspan fill="#ececf3">9</tspan></text>
+  </g>
+</svg>

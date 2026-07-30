@@ -2,10 +2,20 @@ import React from 'react'
 import Cards from '../Components/Cards'
 import certificate1 from '../assets/certificate-1.png'
 import pdf1 from '../assets/Byte_Battle_Harshit Kumar Sharma.pdf'
+import certificate2 from '../assets/certificate-2.jpg'
+import pdf2 from '../assets/Fullstack_Trusting_Brains_Harshit Kumar Sharma.pdf'
 
 function Certificates() {
 
   const myCertificates = [
+    {
+      id: 2,
+      title: "Certified Full Stack Web Development Program",
+      description: "Completed the Certified Full Stack Web Development Program and passed the final assessment conducted by Trusting Brains IT Services Pvt. Ltd., issued via Unstop.",
+      image: certificate2,
+      downloadLink: pdf2,
+      tags: ["Full Stack", "Web Development"],
+    },
     {
       id: 1,
       title: "Byte Battle Coding Competition",
