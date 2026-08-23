@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f1e2d"/>
+      <stop offset="100%" stop-color="#09111c"/>
+    </linearGradient>
+    <linearGradient id="beam" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.1"/>
+      <stop offset="55%" stop-color="#22d3ee" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#67e8f9" stop-opacity="0.2"/>
+    </linearGradient>
+    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="800" height="450" fill="#080b12"/>
+  <g opacity="0.28" stroke="#334155" stroke-width="1">
+    <path d="M0 120H800M0 210H800M0 300H800M110 0V450M270 0V450M430 0V450M590 0V450M750 0V450"/>
+  </g>
+
+  <text x="58" y="62" font-family="monospace" font-size="34" fill="#67e8f9" font-weight="bold" letter-spacing="4">RAG SYSTEMS</text>
+  <text x="60" y="91" font-family="monospace" font-size="14" fill="#64748b" letter-spacing="2.2">FINANCE + SUPPLY CHAIN / GROUNDED Q&amp;A</text>
+
+  <g transform="translate(62 145)">
+    <rect width="162" height="182" rx="10" fill="url(#panel)" stroke="#24536a" stroke-width="2"/>
+    <rect x="20" y="24" width="82" height="9" rx="4.5" fill="#22d3ee"/>
+    <rect x="20" y="48" width="116" height="6" rx="3" fill="#475569"/>
+    <rect x="20" y="64" width="100" height="6" rx="3" fill="#334155"/>
+    <rect x="20" y="94" width="120" height="42" rx="6" fill="#102b3b" stroke="#166278"/>
+    <path d="M35 114h54M35 125h78" stroke="#67e8f9" stroke-width="4" stroke-linecap="round"/>
+    <text x="20" y="163" font-family="monospace" font-size="13" fill="#94a3b8" letter-spacing="1.5">DOMAIN DOCS</text>
+  </g>
+
+  <g transform="translate(323 177)">
+    <circle cx="62" cy="58" r="56" fill="#0c2534" stroke="#22d3ee" stroke-width="3"/>
+    <circle cx="62" cy="58" r="35" fill="#12384a" stroke="#67e8f9" stroke-width="2"/>
+    <path d="M44 58h36M62 40v36" stroke="#67e8f9" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="62" cy="58" r="66" fill="none" stroke="#22d3ee" stroke-opacity="0.24" stroke-width="12" filter="url(#softGlow)"/>
+    <text x="-1" y="150" font-family="monospace" font-size="13" fill="#94a3b8" letter-spacing="1.4">RETRIEVAL</text>
+  </g>
+
+  <path d="M230 235H311M456 235H566" stroke="url(#beam)" stroke-width="5" stroke-linecap="round"/>
+  <path d="M278 225l20 10-20 10M518 225l20 10-20 10" fill="none" stroke="#67e8f9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <g transform="translate(570 145)">
+    <rect width="170" height="182" rx="10" fill="url(#panel)" stroke="#24536a" stroke-width="2"/>
+    <path d="M24 34h39l14 14v97H24z" fill="#12384a" stroke="#67e8f9" stroke-width="2" stroke-linejoin="round"/>
+    <path d="M63 34v16h14" fill="none" stroke="#67e8f9" stroke-width="2" stroke-linejoin="round"/>
+    <path d="M38 70h25M38 84h25M38 98h25" stroke="#67e8f9" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="119" cy="91" r="29" fill="#0d3443" stroke="#22d3ee" stroke-width="2"/>
+    <path d="M106 92l9 9 18-20" fill="none" stroke="#67e8f9" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="22" y="163" font-family="monospace" font-size="13" fill="#94a3b8" letter-spacing="1.4">CITED ANSWERS</text>
+  </g>
+
+  <text x="60" y="397" font-family="monospace" font-size="15" fill="#22d3ee" letter-spacing="2">RETRIEVAL / GENERATION / SOURCE CITATIONS</text>
+</svg>

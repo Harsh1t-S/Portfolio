@@ -7,9 +7,21 @@ import pixelForgeBanner from '../assets/pixel-forge-banner.svg'
 import zomatoBanner from '../assets/zomato.png'
 import learnHubBanner from '../assets/learnhub.png'
 import bracketBanner from '../assets/bracket-banner.svg'
+import ragBanner from '../assets/rag-banner.svg'
 
 function Projects() {
   const myProjects = [
+    {
+      id: 9,
+      title: "RAG Systems — Finance & Supply Chain",
+      description: "Two retrieval-augmented generation systems built for the HCLTech x Economic Times AI Masterclass — grounded Q&A over a finance report and a supply-chain report, each with full source citation.",
+      image: ragBanner,
+      liveLink: "https://github.com/Harsh1t-S/finance-rag",
+      repoLink: "https://github.com/Harsh1t-S/finance-rag",
+      btn: "View Code",
+      tags: ["Python", "RAG", "LLM", "Retrieval"],
+      featured: false,
+    },
     {
       id: 8,
       title: "Bracket — Coding Practice Platform",

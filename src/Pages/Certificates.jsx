@@ -4,10 +4,19 @@ import certificate1 from '../assets/certificate-1.png'
 import pdf1 from '../assets/Byte_Battle_Harshit Kumar Sharma.pdf'
 import certificate2 from '../assets/certificate-2.jpg'
 import pdf2 from '../assets/Fullstack_Trusting_Brains_Harshit Kumar Sharma.pdf'
+import certificateHcltechEt from '../assets/certificate-hcltech-et.png'
 
 function Certificates() {
 
   const myCertificates = [
+    {
+      id: 3,
+      title: "AI Skills for the Future — HCLTech x Economic Times Masterclass",
+      description: "Completed the AI Skills for the Future Masterclass, presented by The Economic Times in partnership with HCLTech, covering applied AI and RAG techniques.",
+      image: certificateHcltechEt,
+      downloadLink: certificateHcltechEt,
+      tags: ["AI", "RAG", "Masterclass"],
+    },
     {
       id: 2,
       title: "Certified Full Stack Web Development Program",
