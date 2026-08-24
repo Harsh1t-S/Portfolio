@@ -56,6 +56,17 @@ function About() {
             </div>
 
             <div>
+              <h3 className="mb-3 text-sm font-semibold uppercase tracking-wider text-slate-400">AI & LLMs</h3>
+              <div className="flex flex-wrap gap-2">
+                {['OpenAI API', 'LangChain', 'ChromaDB', 'RAG', 'Streamlit', 'FastAPI'].map((skill) => (
+                  <span key={skill} className="rounded-full bg-violet-500/10 px-4 py-2 text-sm font-medium text-violet-400 border border-violet-500/20">
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            <div>
               <h3 className="mb-3 text-sm font-semibold uppercase tracking-wider text-slate-400">Tools & Deployment</h3>
               <div className="flex flex-wrap gap-2">
                 {['Git', 'GitHub', 'GitLab', 'Render', 'Vercel', 'Railway'].map((skill) => (
