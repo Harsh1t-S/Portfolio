@@ -4,13 +4,6 @@ import { SOCIALS } from '../socials'
 
 const CHANNELS = [
   {
-    label: 'Email',
-    value: SOCIALS.email,
-    href: `mailto:${SOCIALS.email}`,
-    icon: MailIcon,
-    accent: 'text-cyan-400',
-  },
-  {
     label: 'GitHub',
     value: '@Harsh1t-S',
     href: SOCIALS.github,
