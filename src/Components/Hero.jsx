@@ -1,5 +1,5 @@
 import React from 'react'
-import { GitHubIcon, LinkedInIcon, MailIcon } from './Icons'
+import { ArrowDownIcon, GitHubIcon, LinkedInIcon, MailIcon } from './Icons'
 import { SOCIALS } from '../socials'
 
 const STACK = ['React', 'Node.js', 'MongoDB', 'Python', 'Socket.io', 'Tailwind CSS']
@@ -64,7 +64,7 @@ function Hero({ setCurrentPage }) {
           </button>
         </div>
 
-        <div className="mt-10 flex items-center justify-center gap-4">
+        <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
           <a
             href={SOCIALS.github}
             target="_blank"
@@ -89,6 +89,15 @@ function Hero({ setCurrentPage }) {
             className="rounded-full border border-white/10 bg-white/5 p-2.5 text-slate-300 transition hover:-translate-y-0.5 hover:text-cyan-400"
           >
             <MailIcon className="h-5 w-5" />
+          </a>
+          <a
+            href="/Harshit_Sharma_Resume.pdf"
+            download
+            target="_blank"
+            className="inline-flex items-center gap-2 rounded-full border border-cyan-400/30 bg-cyan-400/10 px-4 py-2.5 text-sm font-semibold text-cyan-300 transition hover:-translate-y-0.5 hover:border-cyan-400/50 hover:bg-cyan-400/20 hover:text-cyan-200 focus:outline-none focus:ring-2 focus:ring-cyan-300"
+          >
+            <ArrowDownIcon className="h-4 w-4" />
+            Download Resume
           </a>
         </div>
       </div>

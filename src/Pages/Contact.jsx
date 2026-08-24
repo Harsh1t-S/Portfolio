@@ -1,5 +1,5 @@
 import React from 'react'
-import { GitHubIcon, GitLabIcon, LinkedInIcon, MailIcon } from '../Components/Icons'
+import { ArrowDownIcon, GitHubIcon, LinkedInIcon, MailIcon, UnstopIcon } from '../Components/Icons'
 import { SOCIALS } from '../socials'
 
 const CHANNELS = [
@@ -25,11 +25,19 @@ const CHANNELS = [
     accent: 'text-sky-400',
   },
   {
-    label: 'GitLab',
-    value: '@harshitkrsharma07',
-    href: SOCIALS.gitlab,
-    icon: GitLabIcon,
-    accent: 'text-orange-400',
+    label: 'Unstop',
+    value: '@harshsha63839',
+    href: SOCIALS.unstop,
+    icon: UnstopIcon,
+    accent: 'text-cyan-400',
+  },
+  {
+    label: 'Download Resume',
+    value: 'Harshit Sharma Resume',
+    href: '/Harshit_Sharma_Resume.pdf',
+    icon: ArrowDownIcon,
+    accent: 'text-cyan-400',
+    download: true,
   },
 ]
 
@@ -57,10 +65,11 @@ function Contact() {
       </div>
 
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-        {CHANNELS.map(({ label, value, href, icon: Icon, accent }) => (
+        {CHANNELS.map(({ label, value, href, icon: Icon, accent, download }) => (
           <a
             key={label}
             href={href}
+            download={download || undefined}
             target={href.startsWith('mailto:') ? undefined : '_blank'}
             rel="noopener noreferrer"
             className="group flex items-center gap-4 rounded-xl border border-white/10 bg-white/5 p-5 transition hover:-translate-y-0.5 hover:border-cyan-400/30 hover:bg-white/10"

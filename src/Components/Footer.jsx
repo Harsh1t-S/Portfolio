@@ -1,5 +1,5 @@
 import React from 'react'
-import { GitHubIcon, GitLabIcon, LinkedInIcon, MailIcon } from './Icons'
+import { GitHubIcon, LinkedInIcon, MailIcon, UnstopIcon } from './Icons'
 import { SOCIALS } from '../socials'
 
 function Footer({ setCurrentPage }) {
@@ -29,13 +29,13 @@ function Footer({ setCurrentPage }) {
             <GitHubIcon className="h-4 w-4" />
           </a>
           <a
-            href={SOCIALS.gitlab}
+            href={SOCIALS.unstop}
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="GitLab"
+            aria-label="Unstop"
             className="rounded-full border border-white/10 bg-white/5 p-2.5 text-slate-400 transition hover:-translate-y-0.5 hover:text-cyan-400"
           >
-            <GitLabIcon className="h-4 w-4" />
+            <UnstopIcon className="h-4 w-4" />
           </a>
           <a
             href={SOCIALS.linkedin}

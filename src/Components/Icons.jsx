@@ -25,16 +25,15 @@ export function MailIcon(props) {
   )
 }
 
-export function GitLabIcon(props) {
+export function UnstopIcon(props) {
   return (
-    <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
-      <path d="M12 21.6 15.9 9.7H8.1L12 21.6Z" opacity=".55" />
-      <path d="M12 21.6 8.1 9.7H2.7L12 21.6Z" opacity=".8" />
-      <path d="M12 21.6 15.9 9.7h5.4L12 21.6Z" opacity=".8" />
-      <path d="M2.7 9.7 1.4 13.8a.95.95 0 0 0 .35 1.06L12 21.6 2.7 9.7Z" />
-      <path d="M2.7 9.7h5.4L5.9 2.3a.5.5 0 0 0-.95 0L2.7 9.7Z" />
-      <path d="M21.3 9.7 22.6 13.8a.95.95 0 0 1-.35 1.06L12 21.6l9.3-11.9Z" />
-      <path d="M21.3 9.7h-5.4l2.2-7.4a.5.5 0 0 1 .95 0l2.25 7.4Z" />
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round" {...props}>
+      <path d="M8 4h8v4a4 4 0 0 1-8 0V4Z" />
+      <path d="M8 6H5v1a4 4 0 0 0 4 4" />
+      <path d="M16 6h3v1a4 4 0 0 1-4 4" />
+      <path d="M12 12v4" />
+      <path d="M8.5 20h7" />
+      <path d="M9 16h6" />
     </svg>
   )
 }
