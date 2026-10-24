@@ -8,9 +8,57 @@ import zomatoBanner from '../assets/zomato.png'
 import learnHubBanner from '../assets/learnhub.png'
 import bracketBanner from '../assets/bracket-banner.svg'
 import ragBanner from '../assets/rag-banner.svg'
+import forgeChessShot from '../assets/forgechess.jpg'
+import agentAegisShot from '../assets/agent-aegis.jpg'
+import orbitNavigatorShot from '../assets/orbit-navigator.jpg'
+import depthWizardShot from '../assets/depth-wizard.jpg'
 
 function Projects() {
   const myProjects = [
+    {
+      id: 10,
+      title: "ForgeChess — Offline Chess PWA",
+      description: "Classic, Setup and Fog of War chess against a from-scratch engine that runs in a Web Worker (230–280k nodes/s in the browser) and learns from the games it loses. Stockfish WASM is lazy-loaded for review and cached by a service worker, so the app installs and keeps working offline.",
+      image: forgeChessShot,
+      liveLink: "https://forgechess.vercel.app",
+      repoLink: "https://github.com/Harsh1t-S/chess",
+      btn: "Try Live",
+      tags: ["JavaScript", "Vite", "Web Workers", "WebAssembly", "PWA"],
+      featured: true,
+    },
+    {
+      id: 11,
+      title: "Agent Aegis — CI for AI Agents",
+      description: "Builds a test suite from an AI agent's own prompt and tool schema, runs it in a sandbox, and scores reliability across versions — failing the release in CI before an unsafe tool call reaches a customer. Backed by 300+ regression tests.",
+      image: agentAegisShot,
+      liveLink: "https://agent-aegis.vercel.app",
+      repoLink: "https://github.com/Harsh1t-S/agent-aegis",
+      btn: "Try Live",
+      tags: ["Python", "FastAPI", "React", "TypeScript", "LLM Agents"],
+      featured: true,
+    },
+    {
+      id: 12,
+      title: "Orbit Navigator — Adaptive Learning Planner",
+      description: "Turns a stated goal into a prerequisite-locked route of live-sourced resources and explains every choice, with streaming “Ask AI” chat. Hardened with SSE error handling, request timeouts and a 54-test regression suite.",
+      image: orbitNavigatorShot,
+      liveLink: "https://orbit-navigator.vercel.app",
+      repoLink: "https://github.com/Harsh1t-S/orbit-navigator",
+      btn: "Try Live",
+      tags: ["React", "FastAPI", "Streaming APIs", "AI"],
+      featured: true,
+    },
+    {
+      id: 13,
+      title: "DepthWizard — Depth from Aerial Images",
+      description: "A React/Vite workbench over a FastAPI service that runs Depth Anything V2 on aerial imagery, calibrates relative depth against a reference DEM or ground control points, and renders 3D terrain. Built for Smart India Hackathon 2026, with a Windows desktop build produced by CI.",
+      image: depthWizardShot,
+      liveLink: "https://depth-wizard.vercel.app",
+      repoLink: "https://github.com/Harsh1t-S/DepthWizard",
+      btn: "Try Live",
+      tags: ["React", "FastAPI", "PyTorch", "Computer Vision"],
+      featured: true,
+    },
     {
       id: 9,
       title: "RAG Systems — Finance & Supply Chain",
@@ -64,7 +112,7 @@ function Projects() {
       repoLink: "https://gitlab.com/harshitkrsharma07/doctors-portal",
       btn: "Go to Portal",
       tags: ["React", "Node.js", "Express", "MongoDB"],
-      featured: true,
+      featured: false,
     },
     {
       id: 4,
@@ -75,7 +123,7 @@ function Projects() {
       repoLink: "https://github.com/Harsh1t-S/pathfinding-visualizer",
       btn: "Try Live",
       tags: ["JavaScript", "Algorithms", "Data Structures"],
-      featured: true,
+      featured: false,
     },
     {
       id: 5,
@@ -96,7 +144,7 @@ function Projects() {
       repoLink: "https://github.com/Harsh1t-S/Zomato",
       btn: "View Code",
       tags: ["TypeScript", "React", "Node.js", "Full-Stack"],
-      featured: true,
+      featured: false,
     },
     {
       id: 7,
@@ -123,7 +171,7 @@ function Projects() {
           My <span className="text-cyan-400">Projects</span>
         </h1>
         <p className="mx-auto max-w-2xl text-slate-400">
-          Interactive visualizers, in-browser machine learning, real-time graphics, and full-stack apps — all built to learn by shipping.
+          AI tooling, offline-first web apps, full-stack platforms and in-browser visualizers — all shipped and deployed.
         </p>
         <div className="mx-auto mt-4 h-1 w-20 rounded bg-cyan-500"></div>
       </div>

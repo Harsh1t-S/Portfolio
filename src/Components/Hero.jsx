@@ -2,7 +2,7 @@ import React from 'react'
 import { ArrowDownIcon, GitHubIcon, LinkedInIcon, MailIcon } from './Icons'
 import { SOCIALS } from '../socials'
 
-const STACK = ['React', 'Node.js', 'MongoDB', 'Python', 'Socket.io', 'Tailwind CSS']
+const STACK = ['React', 'Node.js', 'TypeScript', 'Python', 'MySQL', 'LLMs & RAG']
 
 function Hero({ setCurrentPage }) {
   return (
@@ -33,9 +33,9 @@ function Hero({ setCurrentPage }) {
         </h1>
 
         <p className="mx-auto mb-6 max-w-2xl text-lg text-slate-300 sm:text-xl">
-          A CSE undergrad who builds full-stack web apps, real-time systems, and
-          practical automation tools — then ships and deploys them for real.
-          I turn complex problems into clean, functional code.
+          A CSE undergrad and Full Stack Development Intern at Trusting Brains who
+          builds full-stack web apps and AI-powered products — then ships and
+          deploys them for real clients and users.
         </p>
 
         <div className="mb-10 flex flex-wrap items-center justify-center gap-2">
